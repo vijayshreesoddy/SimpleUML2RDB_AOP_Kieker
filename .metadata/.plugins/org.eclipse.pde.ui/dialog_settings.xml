@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="PDEFormActionManager">
+	</section>
+	<section name="editBundleContainerWizard">
+	</section>
+	<section name="PluginExportWizard">
+		<item key="exportType" value="2"/>
+		<item key="zipFileName0" value="/Users/vijayshree/:Users:vijayshree:QVTo_BB_04_07_2019.zip"/>
+		<item key="zipFileName1" value="/Users/vijayshree/:Users:vijayshree:QVTo_BB_04_07_2019.zip"/>
+		<item key="zipFileName2" value="/Users/vijayshree/QVTo_BB_04_07_2019/:Users:vijayshree:QVTo_BB_04_07_2019.zip"/>
+		<item key="exportUpdate" value="true"/>
+		<item key="exportSource" value="false"/>
+		<item key="exportSourceFormat" value="Generate source bundles"/>
+		<item key="saveAsAnt" value="false"/>
+		<item key="qualifier" value="false"/>
+		<item key="qualifierName" value="201907092128"/>
+		<item key="allowBinaryCycles" value="true"/>
+		<item key="useWorkspaceCompiledClasses" value="false"/>
+		<item key="signJAR" value="false"/>
+	</section>
+	<section name="org.eclipse.pde.ui.dialogs.PluginSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="540"/>
+			<item key="DIALOG_Y_ORIGIN" value="181"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		</section>
+	</section>
+</section>

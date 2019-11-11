@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-Vendor: %providerName
+Bundle-SymbolicName: com.uni.de.qvto.uml2rdb;singleton:=true
+Bundle-Version: 1.1.0.qualifier
+Bundle-Localization: plugin
+Require-Bundle: com.uni.de.qvto.blackbox;bundle-version="1.1.0"

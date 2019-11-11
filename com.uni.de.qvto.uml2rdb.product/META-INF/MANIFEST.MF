@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Product
+Bundle-SymbolicName: com.uni.de.qvto.uml2rdb.product;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: UNI
+Require-Bundle: com.uni.de.qvto.blackbox;bundle-version="1.1.0",
+ com.uni.de.qvto.uml2rdb;bundle-version="1.1.0",
+ org.eclipse.jface;bundle-version="3.16.0",
+ org.eclipse.ui;bundle-version="3.113.0",
+ org.eclipse.equinox.app;bundle-version="1.4.200"
+Automatic-Module-Name: com.uni.de.qvto.uml2rdb.product
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

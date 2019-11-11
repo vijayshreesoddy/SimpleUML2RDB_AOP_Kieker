@@ -1,0 +1,2236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:Trace xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:trace="http:///www.eclipse.org/m2m/qvt/operational/trace.ecore">
+  <traceRecords>
+    <mappingOperation name="model2RDBModel" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Model">
+        <value>
+          <modelElement href="pim.simpleuml#/"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Model">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#/"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="package2schema" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Schema">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="persistentClass2table" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Table">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@attributes.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.1"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@attributes.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.4"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@attributes.3"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.5"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@attributes.4"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.2"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@attributes.5"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.0"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.1"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.4"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.5"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.2"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="enumerationAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@attributes.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.3"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="enumerationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.3"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="relationshipAttribute2foreignKey" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@attributes.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="ForeignKey">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@foreignKeys.0"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1/@attributes.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.4"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1/@attributes.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.8"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1/@attributes.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.7"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1/@attributes.3"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.5"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1/@attributes.4"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.2"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1/@attributes.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.9"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.4"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.8"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.7"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.5"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.2"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.9"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="enumerationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="relationshipAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5/@attributes.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.12"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5/@attributes.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.0"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5/@attributes.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.11"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5/@attributes.3"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.13"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5/@attributes.4"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.3"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5/@attributes.5"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.6"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5/@attributes.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.10"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.12"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.0"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.11"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.13"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.3"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.6"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.10"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="enumerationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="relationshipAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="associationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="dataType2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.5"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.12"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.0"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.11"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.13"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.3"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.6"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.10"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="associationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.3"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.12"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.10"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.0"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.13"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.11"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.6"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="dataType2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.8"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.10"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.0"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.13"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.9"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.4"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.3"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.12"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.2"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.7"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.11"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.5"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.6"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="dataType2primaryKeyColumns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="prefix" type="String">
+        <value primitiveValue="customer" collectionType="String"/>
+      </parameters>
+      <parameters name="leaveIsPrimaryKey" type="Boolean">
+        <value primitiveValue="false" collectionType="Boolean"/>
+      </parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.7"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="relationshipAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.7"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="associationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="dataType2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.0"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.4"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.1"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.5"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.7"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.2"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.3"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6/@attributes.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.6"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.6"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="enumerationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="relationshipAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="associationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="dataType2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.6"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="generalizations2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetClass" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="class2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetClass" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.6"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="generalizations2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetClass" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.6"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="class2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetClass" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.0"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.4"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.1"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.5"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.6"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.7"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.2"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@columns.3"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="class2primaryKey" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="PrimaryKey">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.0/@primaryKey"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="persistentClass2table" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Table">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6/@attributes.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.1"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.1"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="enumerationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="relationshipAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="associationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="dataType2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.1"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="generalizations2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetClass" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="class2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.6"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetClass" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.1"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="generalizations2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetClass" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.1"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="class2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetClass" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.8"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.10"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.0"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.13"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.9"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.4"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.3"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.12"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.2"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.7"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.11"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.5"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.6"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@columns.1"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="class2primaryKey" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="PrimaryKey">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.1/@primaryKey"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="persistentClass2table" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Table">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2/@attributes.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.2"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2/@attributes.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.3"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2/@attributes.3"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.1"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="primitiveAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.2"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.3"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.1"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="enumerationAttribute2column" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2/@attributes.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="TableColumn">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.4"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="enumerationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.4"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="relationshipAttribute2foreignKey" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Property">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2/@attributes.4"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="ForeignKey">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@foreignKeys.0"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="dataType2primaryKeyColumns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="prefix" type="String">
+        <value primitiveValue="customer" collectionType="String"/>
+      </parameters>
+      <parameters name="leaveIsPrimaryKey" type="Boolean">
+        <value primitiveValue="false" collectionType="Boolean"/>
+      </parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="relationshipAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="associationAttributes2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="dataType2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetType" type="DataType">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.2"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.3"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.0"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.1"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.4"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="generalizations2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetClass" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="class2columns" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters>
+      <parameters name="targetClass" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </parameters>
+    </parameters>
+    <result>
+      <result kind="OUT" name="result" type="OrderedSet(TableColumn)">
+        <value collectionType="OrderedSet">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.2"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.3"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.0"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.1"/>
+          </collection>
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@columns.4"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="class2primaryKey" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Class">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.2"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="PrimaryKey">
+        <value>
+          <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0/@elements.2/@primaryKey"/>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="package2schemas" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Sequence(Schema)">
+        <value collectionType="Sequence">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="package2schemas" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Sequence(Schema)">
+        <value collectionType="Sequence">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="package2schemas" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Sequence(Schema)">
+        <value collectionType="Sequence">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="package2schemas" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Sequence(Schema)">
+        <value collectionType="Sequence">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="package2schemas" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Sequence(Schema)">
+        <value collectionType="Sequence">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="package2schemas" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0/@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Sequence(Schema)">
+        <value collectionType="Sequence">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="package2schemas" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.0"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Sequence(Schema)">
+        <value collectionType="Sequence">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="package2schemas" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="pim.simpleuml#//@ownedElements.1"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Sequence(Schema)">
+        <value collectionType="Sequence"/>
+      </result>
+    </result>
+  </traceRecords>
+  <traceRecords>
+    <mappingOperation name="package2schemas" package="Simpleuml_To_Rdb" module="Simpleuml_To_Rdb"/>
+    <context>
+      <context name="self" type="Package">
+        <value>
+          <modelElement href="pim.simpleuml#/"/>
+        </value>
+      </context>
+    </context>
+    <parameters/>
+    <result>
+      <result kind="OUT" name="result" type="Sequence(Schema)">
+        <value collectionType="Sequence">
+          <collection>
+            <modelElement href="Simpleuml_To_Rdb.rdb#//@schemas.0"/>
+          </collection>
+        </value>
+      </result>
+    </result>
+  </traceRecords>
+</trace:Trace>

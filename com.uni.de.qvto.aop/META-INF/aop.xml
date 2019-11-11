@@ -1,0 +1,11 @@
+<aspectj>
+	<aspects>
+		<aspect name="com.uni.de.qvto.aop.monitor.TranformMonitor" />
+	</aspects>
+	<weaver options="-verbose -showWeaveInfo">
+        <include within="com.uni.de.qvto.aop.monitor.TranformMonitor"/>
+        <dump within="com.uni.de.qvto.aop.monitor.TranformMonitor" beforeandafter="true"/> 
+	</weaver>
+</aspectj>
+
+	

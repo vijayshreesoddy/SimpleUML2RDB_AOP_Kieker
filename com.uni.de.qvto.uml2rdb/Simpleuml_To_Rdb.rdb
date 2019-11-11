@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdb:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rdb="http://www.eclipse.org/qvt/1.0.0/Operational/examples/rdb" name="model">
+  <schemas name="class">
+    <elements xsi:type="rdb:Table" name="Call">
+      <columns name="callDescription" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="callId" isPrimaryKey="true">
+        <type name="varchar"/>
+      </columns>
+      <columns name="callResolved" isPrimaryKey="false">
+        <type name="int"/>
+      </columns>
+      <columns name="callSeverity" isPrimaryKey="false">
+        <type name="int"/>
+      </columns>
+      <columns name="callShortDescription" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="callTimestamp" isPrimaryKey="false">
+        <type name="int"/>
+      </columns>
+      <columns name="common" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="customer_customerId" isPrimaryKey="false">
+        <type name="int"/>
+      </columns>
+      <primaryKey name="PKCall" includedColumns="//@schemas.0/@elements.0/@columns.1"/>
+      <foreignKeys name="FKcustomer" includedColumns="//@schemas.0/@elements.0/@columns.7" referredUC="//@schemas.0/@elements.1/@primaryKey"/>
+    </elements>
+    <elements xsi:type="rdb:Table" name="Customer">
+      <columns name="city" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="common" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="contractDate" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="countryCode" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="customerId" isPrimaryKey="true">
+        <type name="int"/>
+      </columns>
+      <columns name="customerTitle" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="email" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="firstName" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="lastName" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="middleName" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="phone" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="stateCode" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="street" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="zipCode" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <primaryKey name="PKCustomer" includedColumns="//@schemas.0/@elements.1/@columns.4"/>
+    </elements>
+    <elements xsi:type="rdb:Table" name="ServiceAgreement">
+      <columns name="customer_customerId" isPrimaryKey="false">
+        <type name="int"/>
+      </columns>
+      <columns name="saDescription" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="saId" isPrimaryKey="true">
+        <type name="int"/>
+      </columns>
+      <columns name="saPrice" isPrimaryKey="false">
+        <type name="varchar"/>
+      </columns>
+      <columns name="serviceLevel" isPrimaryKey="false">
+        <type name="int"/>
+      </columns>
+      <primaryKey name="PKServiceAgreement" includedColumns="//@schemas.0/@elements.2/@columns.2"/>
+      <foreignKeys name="FKcustomer" includedColumns="//@schemas.0/@elements.2/@columns.0" referredUC="//@schemas.0/@elements.1/@primaryKey"/>
+    </elements>
+  </schemas>
+</rdb:Model>

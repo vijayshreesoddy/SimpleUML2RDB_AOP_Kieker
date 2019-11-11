@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.uni.de.qvto.uml2rdb.product.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.uni.de.qvto.uml2rdb.product.Perspective"
+            name="RCP Perspective"
+            id="com.uni.de.qvto.uml2rdb.product.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.uni.de.qvto.uml2rdb.product.application"
+            name="QVTo UML2RDB">
+         <property
+               name="appName"
+               value="QVTo UML2RDB">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
