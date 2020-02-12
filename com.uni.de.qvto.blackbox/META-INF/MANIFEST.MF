@@ -11,3 +11,4 @@ Bundle-Localization: plugin
 Automatic-Module-Name: org.eclipse.m2m.qvt.oml.examples.blackbox
 Bundle-ClassPath: .,
  lib/kieker-1.13-aspectj.jar
+Export-Package: org.eclipse.m2m.qvt.oml.examples.blackbox

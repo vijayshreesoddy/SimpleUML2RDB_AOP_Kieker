@@ -13,3 +13,4 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.ecore.change;bundle-version="2.13.0"
 Automatic-Module-Name: com.uni.de.qvto.uml2rdb.handler
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.uni.de.qvto.uml2rdb.handler

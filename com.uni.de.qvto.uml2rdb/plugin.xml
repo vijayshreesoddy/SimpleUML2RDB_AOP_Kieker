@@ -5,7 +5,7 @@
    <extension
          point="org.eclipse.m2m.qvt.oml.runtime.qvtTransformation">
       <transformation
-            file="Simpleuml_To_Rdb.qvto"
+            file="Simpleuml_To_Rdb_BlackBox.qvto"
             id="Simpleuml_To_Rdb">
          <input
                metamodel="http://www.eclipse.org/qvt/1.0.0/Operational/examples/simpleuml"

@@ -40,7 +40,7 @@ public class UML2RDBHandler extends AbstractHandler {
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
 		// Refer to an existing transformation via URI
-		URI transformationURI = URI.createFileURI("/Users/vijayshree/QVTo_BB_04_07_2019aopfile/com.uni.de.qvto.uml2rdb/Simpleuml_To_Rdb.qvto");
+		URI transformationURI = URI.createFileURI("/Users/vijayshree/QVTo_BB_04_07_2019/com.uni.de.qvto.uml2rdb/Simpleuml_To_Rdb.qvto");
 		// create executor for the given transformation
 		TransformationExecutor executor = new TransformationExecutor(transformationURI);
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("*", new XMIResourceFactoryImpl());
@@ -51,13 +51,13 @@ public class UML2RDBHandler extends AbstractHandler {
 		ExecutionContextImpl context = new ExecutionContextImpl();
 		
 		ResourceSet resourceSet = new ResourceSetImpl();
-		EPackage rdbMM = (EPackage) resourceSet.getResource(URI.createURI("file:////Users/vijayshree/QVTo_BB_04_07_2019aopfile/com.uni.de.qvto.uml2rdb/rdb.ecore"), true).getContents().get(0);
-		EPackage simpleuml = (EPackage) resourceSet.getResource(URI.createURI("file:////Users/vijayshree/QVTo_BB_04_07_2019aopfile/com.uni.de.qvto.uml2rdb/simpleUML.ecore"), true).getContents().get(0);
+		EPackage rdbMM = (EPackage) resourceSet.getResource(URI.createURI("file:////Users/vijayshree/QVTo_BB_04_07_2019/com.uni.de.qvto.uml2rdb/rdb.ecore"), true).getContents().get(0);
+		EPackage simpleuml = (EPackage) resourceSet.getResource(URI.createURI("file:////Users/vijayshree/QVTo_BB_04_07_2019/com.uni.de.qvto.uml2rdb/SimpleUML.ecore"), true).getContents().get(0);
         EPackage.Registry.INSTANCE.put(rdbMM.getNsURI(), rdbMM);
         EPackage.Registry.INSTANCE.put(simpleuml.getNsURI(), simpleuml);
 
 		Resource inResource = resourceSet.getResource(
-				URI.createURI("file:////Users/vijayshree/QVTo_BB_04_07_2019aopfile/com.uni.de.qvto.uml2rdb/pim.simpleuml"), true);		
+				URI.createURI("file:////Users/vijayshree/QVTo_BB_04_07_2019/com.uni.de.qvto.uml2rdb/pim.simpleuml"), true);		
 		EList<EObject> inObjects = inResource.getContents();
 
 		// create the input extent with its initial contents
@@ -81,7 +81,7 @@ public class UML2RDBHandler extends AbstractHandler {
 			List<EObject> outObjects = output.getContents();
 			// let's persist them using a resource 
 			Resource outResource = resourceSet.createResource(
-					URI.createURI("file:////Users/vijayshree/QVTo_BB_04_07_2019aopfile/com.uni.de.qvto.uml2rdb/out.rdb"));
+					URI.createURI("file:////Users/vijayshree/QVTo_BB_04_07_2019/com.uni.de.qvto.uml2rdb/out.rdb"));
 			outResource.getContents().addAll(outObjects);
 			try {
 				outResource.save(Collections.emptyMap());

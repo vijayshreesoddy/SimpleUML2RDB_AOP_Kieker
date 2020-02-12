@@ -7,6 +7,10 @@
    </configIni>
 
    <launcherArgs>
+      <vmArgs>-Dosgi.framework.extensions=org.eclipse.equinox.weaving.hook -Daj.weaving.verbose=true
+-Dorg.aspectj.weaver.showWeaveInfo=true
+-Dorg.aspectj.osgi.verbose=true
+      </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
@@ -25,7 +29,7 @@
    <plugins>
       <plugin id="com.google.guava"/>
       <plugin id="com.ibm.icu"/>
-      <plugin id="com.uni.de.qvto.aop"/>
+      <plugin id="com.uni.de.qvto.aspect"/>
       <plugin id="com.uni.de.qvto.blackbox"/>
       <plugin id="com.uni.de.qvto.uml2rdb"/>
       <plugin id="com.uni.de.qvto.uml2rdb.handler"/>
@@ -34,6 +38,7 @@
       <plugin id="javax.inject"/>
       <plugin id="javax.xml"/>
       <plugin id="lpg.runtime.java"/>
+      <plugin id="org.apache.ant"/>
       <plugin id="org.apache.batik.constants"/>
       <plugin id="org.apache.batik.css"/>
       <plugin id="org.apache.batik.i18n"/>
@@ -44,6 +49,9 @@
       <plugin id="org.apache.felix.scr"/>
       <plugin id="org.apache.log4j"/>
       <plugin id="org.apache.xmlgraphics"/>
+      <plugin id="org.aspectj.runtime"/>
+      <plugin id="org.aspectj.weaver"/>
+      <plugin id="org.eclipse.aspectj"/>
       <plugin id="org.eclipse.core.commands"/>
       <plugin id="org.eclipse.core.contenttype"/>
       <plugin id="org.eclipse.core.databinding"/>
@@ -91,6 +99,8 @@
       <plugin id="org.eclipse.equinox.preferences"/>
       <plugin id="org.eclipse.equinox.registry"/>
       <plugin id="org.eclipse.equinox.util"/>
+      <plugin id="org.eclipse.equinox.weaving.aspectj"/>
+      <plugin id="org.eclipse.equinox.weaving.hook" fragment="true"/>
       <plugin id="org.eclipse.fx.osgi" fragment="true"/>
       <plugin id="org.eclipse.help"/>
       <plugin id="org.eclipse.jface"/>
@@ -125,5 +135,13 @@
       <plugin id="org.w3c.dom.svg"/>
    </plugins>
 
+   <configurations>
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.eclipse.equinox.weaving.aspectj" autoStart="true" startLevel="2" />
+   </configurations>
 
 </product>

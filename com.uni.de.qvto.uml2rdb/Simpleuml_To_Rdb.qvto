@@ -1,4 +1,3 @@
-import m2m.qvt.oml.ExampleJavaLib;
 /*
  * The SimpleUML to RDB Sample demonstrates how to use QVT transformations for 
  * transforming platform independent model to platform specific model. 
@@ -38,14 +37,8 @@ transformation Simpleuml_To_Rdb(in uml : UML, out RDB);
  * shorthand notation for the imperative collect (xcollect) construct.  Alternatively, it could
  * be written as uml.rootObjects()[UML::Model]->xcollect(a | a.map model2RDBModel());
  */
-
 main() {
-	var start := currentTime();
 	uml.rootObjects()[UML::Model]->map model2RDBModel();
-	var endTime := currentTime();
-	/*var resourceDemand := resourceDemand();*/
-	log("Total time taken: "+measure(" Total time  taken :", start,endTime))
-	
 }
 
 /*
@@ -58,11 +51,8 @@ main() {
  * This mapping has no init or end section, leaving the body as an implicit population section.
  */
 mapping UML::Model::model2RDBModel() : RDB::Model {
-	var start := currentTime();
-    name := self.name;
+	name := self.name;
 	schemas := self.map package2schemas()->asOrderedSet();
-	var endTime := currentTime();
-	log("model2RDBModel: "+measure(" model2RDBModel :", start,endTime))
 }
 
 /*
@@ -76,12 +66,8 @@ mapping UML::Model::model2RDBModel() : RDB::Model {
  */
 mapping UML::Package::package2schemas() : Sequence(RDB::Schema) {
 	init {
-	var start := currentTime();
 		result := self.map package2schema()->asSequence()->
 			union(self.getSubpackages()->map package2schemas()->flatten());
-			var endTime := currentTime();
-	log("package2schemas: "+measure(" package2schemas :", start,endTime))
-
 	}
 }
 
@@ -97,12 +83,8 @@ mapping UML::Package::package2schemas() : Sequence(RDB::Schema) {
 mapping UML::Package::package2schema() : RDB::Schema 
 	when { self.hasPersistentClasses() }
 {
-var start := currentTime();
 	name := self.name;
-	elements := self.ownedElements[UML::Class]->map persistentClass2table()->asOrderedSet();
-	var endTime := currentTime();
-	log("package2schema: "+measure(" package2schema :", start,endTime))
-	
+	elements := self.ownedElements[UML::Class]->map persistentClass2table()->asOrderedSet()
 }
 
 /*
@@ -120,17 +102,12 @@ var start := currentTime();
 mapping UML::Class::persistentClass2table() : RDB::Table 
 	when { self.isPersistent() }
 {
-    var start := currentTime();
-
 	name := self.name;
 	columns := self.map class2columns(self)->sortedBy(name);
 	primaryKey := self.map class2primaryKey();
 	foreignKeys := self.attributes.resolveIn(
 					UML::Property::relationshipAttribute2foreignKey, 
 					RDB::constraints::ForeignKey)->asOrderedSet();
-	var endTime := currentTime();
-	log("persistentClass2table: "+measure(" persistentClass2table :", start,endTime))
-				
 }
 
 /*
@@ -139,12 +116,8 @@ mapping UML::Class::persistentClass2table() : RDB::Table
  * using a query.
  */
 mapping UML::Class::class2primaryKey() : RDB::constraints::PrimaryKey {
-    var start := currentTime();
-
 	name := 'PK' + self.name;
-	includedColumns := self.resolveoneIn(UML::Class::persistentClass2table, RDB::Table).getPrimaryKeyColumns();
-	var endTime := currentTime();
-	log("class2primaryKey: "+measure(" class2primaryKey :", start,endTime))
+	includedColumns := self.resolveoneIn(UML::Class::persistentClass2table, RDB::Table).getPrimaryKeyColumns()
 }
 
 /*
@@ -163,11 +136,8 @@ mapping UML::Class::class2primaryKey() : RDB::constraints::PrimaryKey {
  */
 mapping UML::Class::class2columns(targetClass: UML::Class) : OrderedSet(RDB::TableColumn) {
 	init {
-	var start := currentTime();
 		result := self.map dataType2columns(targetClass)->
-			union(self.map generalizations2columns(targetClass))->asOrderedSet();
-			var endTime := currentTime();
-	log("class2columns: "+measure(" class2columns :", start,endTime))
+			union(self.map generalizations2columns(targetClass))->asOrderedSet()
 	}	
 }
 
@@ -177,14 +147,10 @@ mapping UML::Class::class2columns(targetClass: UML::Class) : OrderedSet(RDB::Tab
  */
 mapping UML::DataType::dataType2columns(in targetType : UML::DataType) : OrderedSet(RDB::TableColumn) {
 	init {
-	   var start := currentTime();
 		result := self.map primitiveAttributes2columns(targetType)->
 			union(self.map enumerationAttributes2columns(targetType))->
 			union(self.map relationshipAttributes2columns(targetType))->
-			union(self.map associationAttributes2columns(targetType))->asOrderedSet();
-			var endTime := currentTime();
-	log("dataType2columns: "+measure(" dataType2columns :", start,endTime))
-			
+			union(self.map associationAttributes2columns(targetType))->asOrderedSet()
 	}
 }
 
@@ -202,8 +168,6 @@ mapping UML::DataType::dataType2columns(in targetType : UML::DataType) : Ordered
  */
 mapping UML::DataType::dataType2primaryKeyColumns(in prefix : String, in leaveIsPrimaryKey : Boolean, in targetType : UML::DataType) : OrderedSet(RDB::TableColumn) {
 	init {           
-		   var start := currentTime();
-	
 		result := self.map dataType2columns(self)->select(isPrimaryKey)->
 			collect(c | object RDB::TableColumn {
 				name := prefix + '_' + c.name;
@@ -213,8 +177,6 @@ mapping UML::DataType::dataType2primaryKeyColumns(in prefix : String, in leaveIs
 				};
 				isPrimaryKey := leaveIsPrimaryKey
 			})->asOrderedSet();
-		var endTime := currentTime();
-	log("dataType2columns: "+measure(" dataType2columns :", start,endTime))	
 	}
 }
 
@@ -224,10 +186,7 @@ mapping UML::DataType::dataType2primaryKeyColumns(in prefix : String, in leaveIs
  */
 mapping UML::DataType::primitiveAttributes2columns(in targetType: UML::DataType) : OrderedSet(RDB::TableColumn) {
 	init {
-	var start := currentTime();
-		result := self.attributes->map primitiveAttribute2column(targetType)->asOrderedSet();
-		var endTime := currentTime();
-	log("primitiveAttributes2columns: "+measure(" primitiveAttributes2columns :", start,endTime))
+		result := self.attributes->map primitiveAttribute2column(targetType)->asOrderedSet()
 	}
 }
 
@@ -241,12 +200,9 @@ mapping UML::DataType::primitiveAttributes2columns(in targetType: UML::DataType)
 mapping UML::Property::primitiveAttribute2column(in targetType: UML::DataType) : RDB::TableColumn 
 	when { self.isPrimitive() }
 {
-var start := currentTime();
 	isPrimaryKey := self.isPrimaryKey();
 	name := self.name;
 	type := object RDB::datatypes::PrimitiveDataType { name := umlPrimitive2rdbPrimitive(self.type.name); };
-	var endTime := currentTime();
-	log("primitiveAttribute2column: "+measure(" primitiveAttribute2column :", start,endTime))
 }
 
 /*
@@ -255,10 +211,7 @@ var start := currentTime();
  */
 mapping UML::DataType::enumerationAttributes2columns(in targetType: UML::DataType) : OrderedSet(RDB::TableColumn) {
 	init {
-	var start := currentTime();
-		result := self.attributes->map enumerationAttribute2column(targetType)->asOrderedSet();
-		var endTime := currentTime();
-	log("enumerationAttributes2columns: "+measure(" enumerationAttributes2columns :", start,endTime))
+		result := self.attributes->map enumerationAttribute2column(targetType)->asOrderedSet()
 	}
 }
 
@@ -271,12 +224,9 @@ mapping UML::DataType::enumerationAttributes2columns(in targetType: UML::DataTyp
 mapping UML::Property::enumerationAttribute2column(in targetType: UML::DataType) : RDB::TableColumn 
 	when { self.isEnumeration() }
 {
-var start := currentTime();
 	isPrimaryKey := self.isPrimaryKey();	
 	name := self.name;
 	type := object RDB::datatypes::PrimitiveDataType { name := 'int'; };
-	var endTime := currentTime();
-	log("enumerationAttributes2columns: "+measure(" enumerationAttributes2columns :", start,endTime))
 }
 
 /*
@@ -286,12 +236,8 @@ var start := currentTime();
  */
 mapping UML::DataType::relationshipAttributes2columns(in targetType: UML::DataType) : OrderedSet(RDB::TableColumn) {
 	init {
-	var start := currentTime();
-	
 		result := self.attributes->map relationshipAttribute2foreignKey(targetType)->
 			collect(includedColumns)->asOrderedSet();
-			var endTime := currentTime();
-	log("relationshipAttributes2columns: "+measure(" relationshipAttributes2columns :", start,endTime))
 	}
 }
 
@@ -309,12 +255,9 @@ mapping UML::DataType::relationshipAttributes2columns(in targetType: UML::DataTy
 mapping UML::Property::relationshipAttribute2foreignKey(in targetType: UML::DataType) : RDB::constraints::ForeignKey 
 	when { self.isRelationship() }
 {
-var start := currentTime();
 	name := 'FK' + self.name;
 	includedColumns := self.type.asDataType().map dataType2primaryKeyColumns(self.name, self.isIdentifying(), targetType);
 	referredUC := self.type.late resolveoneIn(UML::Class::class2primaryKey, RDB::constraints::PrimaryKey);
-	var endTime := currentTime();
-	log("relationshipAttribute2foreignKey: "+measure(" relationshipAttribute2foreignKey :", start,endTime))
 }
 
 /*
@@ -324,11 +267,8 @@ var start := currentTime();
  */
 mapping UML::DataType::associationAttributes2columns(targetType : UML::DataType) : OrderedSet(RDB::TableColumn) {
 	init {
-	var start := currentTime();
 		result := self.attributes[isAssociation()]->
-			collect(type.asDataType()->map dataType2columns(targetType))->asOrderedSet();
-			var endTime := currentTime();
-	log("associationAttributes2columns: "+measure(" associationAttributes2columns :", start,endTime))
+			collect(type.asDataType()->map dataType2columns(targetType))->asOrderedSet()
 	}
 }
 
@@ -338,10 +278,7 @@ mapping UML::DataType::associationAttributes2columns(targetType : UML::DataType)
  */
 mapping UML::Class::generalizations2columns(targetClass : UML::Class) : OrderedSet(RDB::TableColumn) {
 	init {
-	var start := currentTime();
 		result := self.generalizations.general->map class2columns(targetClass)->flatten()->asOrderedSet();
-		var endTime := currentTime();
-	log("generalizations2columns: "+measure(" generalizations2columns :", start,endTime))
 	}
 }
 
@@ -350,10 +287,8 @@ mapping UML::Class::generalizations2columns(targetClass : UML::Class) : OrderedS
  * collection that are of type UML::Package using shorthand xselect notation.
  */
 query UML::Package::getSubpackages() : OrderedSet(UML::Package) {
-
 	return self.ownedElements[UML::Package]->asOrderedSet()
-	}
-	
+}
 
 /*
  * This query performs a type cast from a UML Type to a UML DataType.
