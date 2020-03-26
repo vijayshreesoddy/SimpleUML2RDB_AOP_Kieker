@@ -3,6 +3,7 @@
 
 <product name="QVTo UML2RDB" uid="qvto" id="com.uni.de.qvto.uml2rdb.product.product" application="com.uni.de.qvto.uml2rdb.product.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
 
+
    <configIni use="default">
    </configIni>
 
@@ -17,19 +18,20 @@
 
    <windowImages/>
 
+
    <launcher>
       <win useIco="false">
          <bmp/>
       </win>
    </launcher>
 
+
    <vm>
    </vm>
 
+
    <plugins>
-      <plugin id="com.google.guava"/>
       <plugin id="com.ibm.icu"/>
-      <plugin id="com.uni.de.qvto.aspect"/>
       <plugin id="com.uni.de.qvto.blackbox"/>
       <plugin id="com.uni.de.qvto.uml2rdb"/>
       <plugin id="com.uni.de.qvto.uml2rdb.handler"/>
@@ -38,7 +40,6 @@
       <plugin id="javax.inject"/>
       <plugin id="javax.xml"/>
       <plugin id="lpg.runtime.java"/>
-      <plugin id="org.apache.ant"/>
       <plugin id="org.apache.batik.constants"/>
       <plugin id="org.apache.batik.css"/>
       <plugin id="org.apache.batik.i18n"/>
@@ -46,12 +47,7 @@
       <plugin id="org.apache.commons.io"/>
       <plugin id="org.apache.commons.jxpath"/>
       <plugin id="org.apache.commons.logging"/>
-      <plugin id="org.apache.felix.scr"/>
-      <plugin id="org.apache.log4j"/>
       <plugin id="org.apache.xmlgraphics"/>
-      <plugin id="org.aspectj.runtime"/>
-      <plugin id="org.aspectj.weaver"/>
-      <plugin id="org.eclipse.aspectj"/>
       <plugin id="org.eclipse.core.commands"/>
       <plugin id="org.eclipse.core.contenttype"/>
       <plugin id="org.eclipse.core.databinding"/>
@@ -59,9 +55,10 @@
       <plugin id="org.eclipse.core.databinding.property"/>
       <plugin id="org.eclipse.core.expressions"/>
       <plugin id="org.eclipse.core.filesystem"/>
-      <plugin id="org.eclipse.core.filesystem.macosx" fragment="true"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86_64" fragment="true"/>
       <plugin id="org.eclipse.core.jobs"/>
       <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.resources.win32.x86_64" fragment="true"/>
       <plugin id="org.eclipse.core.runtime"/>
       <plugin id="org.eclipse.e4.core.commands"/>
       <plugin id="org.eclipse.e4.core.contexts"/>
@@ -76,42 +73,35 @@
       <plugin id="org.eclipse.e4.ui.css.swt"/>
       <plugin id="org.eclipse.e4.ui.css.swt.theme"/>
       <plugin id="org.eclipse.e4.ui.di"/>
+      <plugin id="org.eclipse.e4.ui.dialogs"/>
       <plugin id="org.eclipse.e4.ui.model.workbench"/>
       <plugin id="org.eclipse.e4.ui.services"/>
       <plugin id="org.eclipse.e4.ui.widgets"/>
       <plugin id="org.eclipse.e4.ui.workbench"/>
       <plugin id="org.eclipse.e4.ui.workbench.addons.swt"/>
       <plugin id="org.eclipse.e4.ui.workbench.renderers.swt"/>
-      <plugin id="org.eclipse.e4.ui.workbench.renderers.swt.cocoa" fragment="true"/>
       <plugin id="org.eclipse.e4.ui.workbench.swt"/>
       <plugin id="org.eclipse.e4.ui.workbench3"/>
       <plugin id="org.eclipse.emf.common"/>
-      <plugin id="org.eclipse.emf.compare"/>
-      <plugin id="org.eclipse.emf.compare.uml2"/>
       <plugin id="org.eclipse.emf.ecore"/>
       <plugin id="org.eclipse.emf.ecore.change"/>
       <plugin id="org.eclipse.emf.ecore.xmi"/>
-      <plugin id="org.eclipse.emf.mapping.ecore2xml"/>
       <plugin id="org.eclipse.equinox.app"/>
       <plugin id="org.eclipse.equinox.common"/>
-      <plugin id="org.eclipse.equinox.ds"/>
-      <plugin id="org.eclipse.equinox.event"/>
       <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.region" fragment="true"/>
       <plugin id="org.eclipse.equinox.registry"/>
-      <plugin id="org.eclipse.equinox.util"/>
-      <plugin id="org.eclipse.equinox.weaving.aspectj"/>
+      <plugin id="org.eclipse.equinox.supplement"/>
+      <plugin id="org.eclipse.equinox.transforms.hook" fragment="true"/>
       <plugin id="org.eclipse.equinox.weaving.hook" fragment="true"/>
-      <plugin id="org.eclipse.fx.osgi" fragment="true"/>
       <plugin id="org.eclipse.help"/>
       <plugin id="org.eclipse.jface"/>
       <plugin id="org.eclipse.jface.databinding"/>
-      <plugin id="org.eclipse.jface.text"/>
       <plugin id="org.eclipse.m2m.qvt.oml"/>
       <plugin id="org.eclipse.m2m.qvt.oml.common"/>
       <plugin id="org.eclipse.m2m.qvt.oml.cst.parser"/>
       <plugin id="org.eclipse.m2m.qvt.oml.ecore.imperativeocl"/>
       <plugin id="org.eclipse.m2m.qvt.oml.emf.util"/>
-      <plugin id="org.eclipse.m2m.qvt.oml.examples.blackbox"/>
       <plugin id="org.eclipse.ocl"/>
       <plugin id="org.eclipse.ocl.common"/>
       <plugin id="org.eclipse.ocl.ecore"/>
@@ -120,15 +110,9 @@
       <plugin id="org.eclipse.osgi.services"/>
       <plugin id="org.eclipse.osgi.util"/>
       <plugin id="org.eclipse.swt"/>
-      <plugin id="org.eclipse.swt.cocoa.macosx.x86_64" fragment="true"/>
-      <plugin id="org.eclipse.text"/>
+      <plugin id="org.eclipse.swt.win32.win32.x86_64" fragment="true"/>
       <plugin id="org.eclipse.ui"/>
-      <plugin id="org.eclipse.ui.cocoa" fragment="true"/>
       <plugin id="org.eclipse.ui.workbench"/>
-      <plugin id="org.eclipse.uml2.common"/>
-      <plugin id="org.eclipse.uml2.types"/>
-      <plugin id="org.eclipse.uml2.uml"/>
-      <plugin id="org.eclipse.xtext.logging" fragment="true"/>
       <plugin id="org.w3c.css.sac"/>
       <plugin id="org.w3c.dom.events"/>
       <plugin id="org.w3c.dom.smil"/>
@@ -136,12 +120,14 @@
    </plugins>
 
    <configurations>
-      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="1" />
-      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
-      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
-      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
-      <plugin id="org.eclipse.equinox.weaving.aspectj" autoStart="true" startLevel="2" />
    </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
 
 </product>

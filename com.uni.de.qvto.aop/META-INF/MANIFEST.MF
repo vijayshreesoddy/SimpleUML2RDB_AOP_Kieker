@@ -3,8 +3,16 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Aop
 Bundle-SymbolicName: com.uni.de.qvto.aop;singleton:=true
 Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.uni.de.qvto.aop.monitor.Activator
 Bundle-Vendor: UNI
 Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.core.commands;bundle-version="3.9.200"
+ org.aspectj.runtime,
+ com.uni.de.qvto.blackbox,
+ org.eclipse.ui.workbench,
+ org.eclipse.m2m.qvt.oml
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: com.uni.de.qvto.aop.monitor;aspects="TranformMonitor"; aspect-policy:=opt-in
+Export-Package: com.uni.de.qvto.aop.monitor;aspects=TranformMonitor
+Eclipse-SupplementBundle: org.eclipse.m2m.qvt.oml
+Automatic-Module-Name: com.uni.de.qvto.aop.monitor

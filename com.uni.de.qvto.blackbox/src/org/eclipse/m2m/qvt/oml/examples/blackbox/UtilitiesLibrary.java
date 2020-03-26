@@ -53,6 +53,7 @@ public class UtilitiesLibrary {
 	    MONITORING_CONTROLLER.newMonitoringRecord(e);
 		return endTime-startTime+" ms";
 	}
+	
 	/*public static long resourceDemand() {
 		return  ((Object) MONITORING_CONTROLLER)).getResourceDemand();
 	
