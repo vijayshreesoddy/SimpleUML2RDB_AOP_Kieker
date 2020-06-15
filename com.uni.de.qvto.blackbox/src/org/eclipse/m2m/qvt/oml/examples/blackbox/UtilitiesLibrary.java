@@ -23,10 +23,12 @@ import org.eclipse.m2m.qvt.oml.blackbox.java.Operation;
 import org.eclipse.m2m.qvt.oml.blackbox.java.Parameter;
 import org.eclipse.ocl.util.Bag;
 import org.eclipse.ocl.util.CollectionUtil;
+import org.hyperic.sigar.SigarException;
 
 import kieker.common.record.controlflow.OperationExecutionRecord;
 import kieker.monitoring.core.controller.IMonitoringController;
 import kieker.monitoring.core.controller.MonitoringController;
+import kieker.monitoring.sampler.oshi.OshiSamplerFactory;
 
 
 public class UtilitiesLibrary {
@@ -42,7 +44,7 @@ public class UtilitiesLibrary {
 		return MONITORING_CONTROLLER.getTimeSource().getTime();
 	}
 	
-	public static String measure(String ruleName, long startTime, long endTime, long resourceDemand) {
+	public static String measure(String ruleName, long startTime, long endTime) {
 		 final OperationExecutionRecord e = new OperationExecutionRecord(
 				 ruleName,
 				 OperationExecutionRecord.NO_SESSION_ID,
@@ -51,12 +53,24 @@ public class UtilitiesLibrary {
 				 OperationExecutionRecord.NO_EOI_ESS,
 				 OperationExecutionRecord.NO_EOI_ESS);
 	    MONITORING_CONTROLLER.newMonitoringRecord(e);
+	    //InfluxDataWriter.INSTANCE().inputRecord(e);
 		return endTime-startTime+" ms";
 	}
-	/*public static long resourceDemand() {
-		return  ((Object) MONITORING_CONTROLLER)).getResourceDemand();
+
 	
-	}*/
+	public static String measureMemory() {
+		try {
+			OshiSamplerFactory.INSTANCE.createSensorMemSwapUsage().sample(MONITORING_CONTROLLER);
+		} catch (SigarException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public  void measureCountOfElements(String count) {
+		System.out.println("count is---"+count);
+	}
 	
 	public Date createDate(String dateStr) {
 		return (Date)EcoreFactory.eINSTANCE.createFromString(EcorePackage.eINSTANCE.getEDate(), dateStr);
@@ -91,3 +105,4 @@ public class UtilitiesLibrary {
 		return result;
 	}
 }
+

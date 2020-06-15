@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="lib" path="lib/moshi-1.9.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/logging-interceptor-3.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/converter-moshi-2.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/okio-1.15.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/retrofit-2.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/okhttp-3.12.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/influxdb-java-2.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jna-platform-5.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jna-5.5.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/oshi-core-3.12.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/sigar-1.6.4.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="lib" path="lib/kieker-1.13-aspectj.jar"/>
-	<classpathentry kind="lib" path="/Users/vijayshree/Documents/kieker-1.14-SNAPSHOT/lib/sigar/sigar-1.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/kieker-1.14-SNAPSHOT-aspectj.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
