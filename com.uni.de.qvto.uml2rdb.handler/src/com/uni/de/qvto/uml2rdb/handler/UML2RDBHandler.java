@@ -40,7 +40,7 @@ public class UML2RDBHandler extends AbstractHandler {
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
 		// Refer to an existing transformation via URI
-		URI transformationURI = URI.createFileURI("/Users/vijayshree/QVTo_BB_04_07_2019/com.uni.de.qvto.uml2rdb/Simpleuml_To_Rdb.qvto");
+		URI transformationURI = URI.createFileURI("/Users/vijayshree/QVTo_BB_04_07_2019/com.uni.de.qvto.uml2rdb/Simpleuml_To_Rdb_BlackBox.qvto");
 		// create executor for the given transformation
 		TransformationExecutor executor = new TransformationExecutor(transformationURI);
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("*", new XMIResourceFactoryImpl());

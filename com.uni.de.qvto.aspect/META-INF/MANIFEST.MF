@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Subversion Customizing (AOP Handlers)
+Bundle-SymbolicName: com.uni.de.qvto.aspect
+Bundle-Version: 1.5.0.qualifier
+Bundle-Vendor: BOSCH
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: com.uni.de.qvto.aspect;aspects=SVNAspects
+Require-Bundle: org.aspectj.runtime;bundle-version="1.7.0",
+ org.eclipse.core.runtime;bundle-version="3.8.0",
+ org.eclipse.core.resources;bundle-version="3.8.1",
+ org.eclipse.ui;bundle-version="3.8.2",
+ org.eclipse.m2m.qvt.oml;bundle-version="3.9.0",
+ com.uni.de.qvto.uml2rdb.handler;bundle-version="1.0.0",
+ com.uni.de.qvto.blackbox;bundle-version="1.1.0"
+Eclipse-SupplementBundle:  com.uni.de.qvto.tranformation, org.eclipse.ui.workbench, org.eclipse.m2m.qvt.oml
+Bundle-Activator: com.uni.de.qvto.aspect.Activator
+Bundle-ActivationPolicy: lazy

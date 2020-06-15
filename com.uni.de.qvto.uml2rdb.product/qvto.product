@@ -29,7 +29,6 @@
    <plugins>
       <plugin id="com.google.guava"/>
       <plugin id="com.ibm.icu"/>
-      <plugin id="com.uni.de.qvto.aspect"/>
       <plugin id="com.uni.de.qvto.blackbox"/>
       <plugin id="com.uni.de.qvto.uml2rdb"/>
       <plugin id="com.uni.de.qvto.uml2rdb.handler"/>
@@ -111,7 +110,6 @@
       <plugin id="org.eclipse.m2m.qvt.oml.cst.parser"/>
       <plugin id="org.eclipse.m2m.qvt.oml.ecore.imperativeocl"/>
       <plugin id="org.eclipse.m2m.qvt.oml.emf.util"/>
-      <plugin id="org.eclipse.m2m.qvt.oml.examples.blackbox"/>
       <plugin id="org.eclipse.ocl"/>
       <plugin id="org.eclipse.ocl.common"/>
       <plugin id="org.eclipse.ocl.ecore"/>

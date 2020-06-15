@@ -1,0 +1,10 @@
+<aspectj>
+	<aspects>
+		<aspect name="com.uni.de.qvto.aspect.QVToEngineAspects" />
+	</aspects>
+	<weaver options="-verbose -showWeaveInfo">
+        <include within="com.uni.de.qvto.aspect.QVToEngineAspects"/>
+        <dump within="com.uni.de.qvto.aspect.QVToEngineAspects" beforeandafter="true"/>
+	</weaver>
+</aspectj>
+
